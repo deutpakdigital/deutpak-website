@@ -276,7 +276,7 @@ const T = [["path", {
   D = () => {
     const s = [{
       num: "01",
-      title: "Senior by default",
+      title: "Expert-led by default",
       desc: "Every project is owned by experienced engineers, not handed down to juniors. You get the people who've solved the problem before.",
       icon: <C_z />,
       colorClass: "bg-purple"
