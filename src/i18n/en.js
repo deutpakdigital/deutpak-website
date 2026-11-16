@@ -623,7 +623,7 @@ const en = {
   ab7Body1: "<strong>Engineering discipline you can trust.</strong>",
   ab7Body2: "We are a software house built on simple, uncompromised standards. We treat your product with the same rigor we would our own, focusing on longevity, performance, and clear alignment with business metrics.",
   ab7Body3: "We believe that growing businesses deserve the exact same engineering quality as enterprise giants, delivered with agility and clear accountability.",
-  ab7Val1: "<strong>Senior by default.</strong> Every project is owned by <strong>experienced engineers</strong>, not handed to juniors.",
+  ab7Val1: "<strong>Expert-led by default.</strong> Every project is owned by <strong>experienced engineers</strong>, not handed to juniors.",
   ab7Val2: "<strong>Clarity over jargon.</strong> Honest scope, <strong>fixed budgets</strong>, plain language. You always know what you're getting.",
   ab7Val3: "<strong>We ship.</strong> Pilots that gather dust help no one. We measure ourselves by <strong>what goes live</strong>.",
   ab7Val4: "<strong>Built to last.</strong> <strong>Clean architecture</strong>, documented code, and systems your team can grow into.",

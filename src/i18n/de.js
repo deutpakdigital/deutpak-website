@@ -626,7 +626,7 @@ const de = {
   ab7Body1: "<strong>Technische Disziplin, der Sie vertrauen können.</strong>",
   ab7Body2: "Wir sind ein Softwarehaus, das auf einfachen, kompromisslosen Standards basiert. Wir behandeln Ihr Produkt mit derselben Sorgfalt wie unser eigenes.",
   ab7Body3: "Wir glauben, dass wachsende Unternehmen dieselbe Ingenieursqualität verdienen wie Großkonzerne — mit Agilität und klarer Verantwortung.",
-  ab7Val1: "<strong>Senior von Grund auf.</strong> Jedes Projekt wird von <strong>erfahrenen Ingenieuren</strong> verantwortet, nicht an Junioren übergeben.",
+  ab7Val1: "<strong>Von Experten geführt.</strong> Jedes Projekt wird von <strong>erfahrenen Ingenieuren</strong> verantwortet, nicht an Junioren übergeben.",
   ab7Val2: "<strong>Klarheit statt Fachjargon.</strong> Ehrlicher Umfang, <strong>feste Budgets</strong>, verständliche Sprache. Sie wissen immer, was Sie bekommen.",
   ab7Val3: "<strong>Wir liefern.</strong> Pilotprojekte, die verstauben, helfen niemandem. Wir messen uns an <strong>dem, was live geht</strong>.",
   ab7Val4: "<strong>Gebaut für die Zukunft.</strong> <strong>Saubere Architektur</strong>, dokumentierter Code und Systeme, in die Ihr Team hineinwachsen kann.",
