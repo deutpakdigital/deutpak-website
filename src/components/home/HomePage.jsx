@@ -5,7 +5,7 @@ import { HomeNav } from "@/components/home/HomeNav";
 import { ThemeReveal } from "@/components/home/ThemeReveal";
 import { ParticleBackground } from "@/components/home/ParticleBackground";
 import { HeroSlides } from "@/components/home/HeroSlides";
-import { AboutPages } from "@/components/home/AboutPages";
+import { AboutPages, TeamPages } from "@/components/home/AboutPages";
 import { ServicesPage } from "@/components/home/ServicesPage";
 import { ProductsPage } from "@/components/home/ProductsPage";
 import { ContactPage } from "@/components/home/ContactPage";
@@ -100,6 +100,7 @@ const HomePage = () => {
             <HeroSlides scrollToPage={d} theme={n} toggleTheme={u} />
             <AboutPages currentPage={r} />
             <ServicesPage currentPage={r} />
+            <TeamPages />
             <ProductsPage />
             <ContactPage scrollToPage={d} />
           </div>

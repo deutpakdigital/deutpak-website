@@ -665,7 +665,7 @@ const en = {
   svcDataF5Desc: "Intelligent reporting and forecasting surfacing patterns, predictions, and insights your team would otherwise miss.",
   svcDataF6Title: "Compliance-Aware Data",
   svcDataF6Desc: "Built with governance, audit trails, and data integrity at the core — bank-grade discipline.",
-  svcRanTitle: "RAN Telecom Services",
+  svcRanTitle: "RAN and Telecom Services",
   svcRanTagline: "We integrate, configure, and keep your mobile networks running.",
   svcRanDesc: "2G/3G/4G/5G/5G+ site integration, OSS configuration and change management, KPI monitoring, and L1/L2 remote NOC back-office support for operators and vendors.",
   svcRanF1Title: "2G to 5G/5G+ Site Integration",

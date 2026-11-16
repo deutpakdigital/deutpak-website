@@ -44,7 +44,7 @@ const HeroSlides = ({
           __html: t.sl2Sub
         }} />
             <div className="slide-actions" data-s="4">
-              <button className="btn-p" onClick={() => r(11)}>
+              <button className="btn-p" onClick={() => r(8)}>
                 {t.sl2Btn1}
               </button>
             </div>
@@ -62,7 +62,7 @@ const HeroSlides = ({
           __html: t.sl3Sub
         }} />
             <div className="slide-actions" data-s="4">
-              <button className="btn-p" onClick={() => r(11)}>
+              <button className="btn-p" onClick={() => r(8)}>
                 {t.sl3Btn1}
               </button>
             </div>

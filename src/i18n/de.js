@@ -668,7 +668,7 @@ const de = {
   svcDataF5Desc: "Intelligente Berichte und Prognosen, die Muster und Erkenntnisse sichtbar machen.",
   svcDataF6Title: "Konforme Datenverarbeitung",
   svcDataF6Desc: "Mit Governance, Prüfpfaden und Datenintegrität — bankenkonforme Disziplin.",
-  svcRanTitle: "RAN-Telekom-Services",
+  svcRanTitle: "RAN- und Telekom-Services",
   svcRanTagline: "Wir integrieren, konfigurieren und halten Ihre Mobilfunknetze am Laufen.",
   svcRanDesc: "2G/3G/4G/5G/5G+-Standortintegration, OSS-Konfiguration und Change-Management, KPI-Überwachung sowie L1/L2-Remote-NOC-Backoffice-Support für Netzbetreiber und Hersteller.",
   svcRanF1Title: "Standortintegration von 2G bis 5G/5G+",
