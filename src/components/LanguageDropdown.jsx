@@ -18,9 +18,6 @@ const LanguageDropdown = ({
     }, {
       code: "en",
       label: "English (EN)"
-    }, {
-      code: "ar",
-      label: "العربية (AR)"
     }],
     l = o.find(u => u.code === e)?.code.toUpperCase() || "DE";
   return React.useEffect(() => {
@@ -67,8 +64,8 @@ const LanguageDropdown = ({
           {n && <ul style={{
       position: "absolute",
       top: "calc(100% + 8px)",
-      right: e === "ar" ? "auto" : "0",
-      left: e === "ar" ? "0" : "auto",
+      right: "0",
+      left: "auto",
       background: r === "light" ? "rgba(255, 255, 255, 0.95)" : "rgba(15, 23, 42, 0.95)",
       backdropFilter: "blur(20px)",
       border: r === "light" ? "1px solid rgba(0, 0, 0, 0.08)" : "1px solid rgba(255, 255, 255, 0.08)",

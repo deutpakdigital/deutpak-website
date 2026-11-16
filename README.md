@@ -16,11 +16,11 @@ npm run build && npm start
 | `src/components/home/` | The full-screen homepage: nav, hero slides, about/team, services, products, contact form, particle canvas, theme-reveal overlay |
 | `src/views/` | Inner pages (services, products, landing pages, blog posts, legal pages) |
 | `src/components/` | Shared pieces: `SiteLayout` (Navbar / ContactSection / Footer), `InnerHeader`, `ServiceIntro`, `NumberCard`, `TestimonialSlider`, `LanguageDropdown` |
-| `src/i18n/` | German (default), English and Arabic strings |
-| `src/context/LanguageContext.jsx` | Language state; switches `dir="rtl"` and the Bootstrap RTL stylesheet for Arabic |
+| `src/i18n/` | German (default) and English strings |
+| `src/context/LanguageContext.jsx` | Language state; German unless the visitor picks English in the switcher |
 | `src/lib/email.js` | Contact form sending via EmailJS (IDs overridable with `NEXT_PUBLIC_EMAILJS_*` env vars) |
 | `public/assets/` | Images and fonts, original filenames |
-| `public/css/`, `public/styles/` | Bootstrap (LTR/RTL) and the site stylesheets, linked in the same order as the original |
+| `public/css/`, `public/styles/` | Bootstrap and the site stylesheets, linked in the same order as the original |
 
 Analytics from the original site (Google Analytics, Meta Pixel, Klaviyo) are wired in `src/app/layout.jsx`.
 

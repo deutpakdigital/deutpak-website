@@ -16,29 +16,29 @@ const ServicesPage = ({
       title: t.svcAppTitle,
       tagline: t.svcAppTagline,
       desc: t.svcAppDesc,
-      icon: "💻",
+      icon: "fa-laptop-code",
       features: [{
-        icon: "🌐",
+        icon: "fa-globe",
         title: t.svcAppF1Title,
         description: t.svcAppF1Desc
       }, {
-        icon: "⚙️",
+        icon: "fa-cogs",
         title: t.svcAppF2Title,
         description: t.svcAppF2Desc
       }, {
-        icon: "🛒",
+        icon: "fa-shopping-cart",
         title: t.svcAppF3Title,
         description: t.svcAppF3Desc
       }, {
-        icon: "🤖",
+        icon: "fa-robot",
         title: t.svcAppF4Title,
         description: t.svcAppF4Desc
       }, {
-        icon: "📡",
+        icon: "fa-microchip",
         title: t.svcAppF5Title,
         description: t.svcAppF5Desc
       }, {
-        icon: "⚡",
+        icon: "fa-bolt",
         title: t.svcAppF6Title,
         description: t.svcAppF6Desc
       }]
@@ -47,31 +47,62 @@ const ServicesPage = ({
       title: t.svcDataTitle,
       tagline: t.svcDataTagline,
       desc: t.svcDataDesc,
-      icon: "📊",
+      icon: "fa-chart-bar",
       features: [{
-        icon: "📊",
+        icon: "fa-chart-pie",
         title: t.svcDataF1Title,
         description: t.svcDataF1Desc
       }, {
-        icon: "🔄",
+        icon: "fa-sync-alt",
         title: t.svcDataF2Title,
         description: t.svcDataF2Desc
       }, {
-        icon: "🏗️",
+        icon: "fa-sitemap",
         title: t.svcDataF3Title,
         description: t.svcDataF3Desc
       }, {
-        icon: "🔗",
+        icon: "fa-link",
         title: t.svcDataF4Title,
         description: t.svcDataF4Desc
       }, {
-        icon: "🧠",
+        icon: "fa-brain",
         title: t.svcDataF5Title,
         description: t.svcDataF5Desc
       }, {
-        icon: "🛡️",
+        icon: "fa-shield-alt",
         title: t.svcDataF6Title,
         description: t.svcDataF6Desc
+      }]
+    }, {
+      id: "ran",
+      title: t.svcRanTitle,
+      tagline: t.svcRanTagline,
+      desc: t.svcRanDesc,
+      icon: "fa-broadcast-tower",
+      features: [{
+        icon: "fa-signal",
+        title: t.svcRanF1Title,
+        description: t.svcRanF1Desc
+      }, {
+        icon: "fa-sliders-h",
+        title: t.svcRanF2Title,
+        description: t.svcRanF2Desc
+      }, {
+        icon: "fa-chart-line",
+        title: t.svcRanF3Title,
+        description: t.svcRanF3Desc
+      }, {
+        icon: "fa-headset",
+        title: t.svcRanF4Title,
+        description: t.svcRanF4Desc
+      }, {
+        icon: "fa-handshake",
+        title: t.svcRanF5Title,
+        description: t.svcRanF5Desc
+      }, {
+        icon: "fa-clipboard-list",
+        title: t.svcRanF6Title,
+        description: t.svcRanF6Desc
       }]
     }],
     [i, a] = React.useState(!1),
@@ -108,7 +139,11 @@ const ServicesPage = ({
     }}>
             {n.map(d => <div className="svc-column" onMouseEnter={() => i && window.innerWidth >= 1025 && l(d.id)} onMouseLeave={() => window.innerWidth >= 1025 && l(null)} onClick={() => i && window.innerWidth < 1025 && l(g => g === d.id ? null : d.id)} key={d.id}>
                 <div className="svc-col-hd-centered">
-                  <div className="svc-card-icon-glow">{d.icon}</div>
+                  <div className="svc-card-icon-glow">
+                    <i className={`fas ${d.icon}`} style={{
+              color: "var(--accent)"
+            }} aria-hidden="true" />
+                  </div>
                   <h3>{d.title}</h3>
                   <p className="svc-col-tagline">{d.tagline}</p>
                   <p className="svc-col-desc">{d.desc}</p>
@@ -127,7 +162,11 @@ const ServicesPage = ({
                 </div>
                 <div className="svc-exp-grid">
                   {u.features.map((d, g) => <div className="sc expanded-sc" key={g}>
-                      <span className="sc-ico">{d.icon}</span>
+                      <span className="sc-ico">
+                        <i className={`fas fa-fw ${d.icon}`} style={{
+                  color: "var(--accent)"
+                }} aria-hidden="true" />
+                      </span>
                       <div className="sc-body">
                         <h4>{d.title}</h4>
                         <p>{d.description}</p>

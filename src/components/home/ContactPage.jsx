@@ -178,7 +178,7 @@ const ContactPage = ({
         direction: "ltr",
         alignItems: "stretch"
       }}>
-            <div dir={e === "ar" ? "rtl" : "ltr"} data-s="4" style={{
+            <div dir="ltr" data-s="4" style={{
           background: "var(--card-bg, rgba(255, 255, 255, 0.02))",
           border: "1px solid var(--border)",
           borderRadius: "24px",
@@ -285,7 +285,7 @@ const ContactPage = ({
                   </div>}
               </form>
             </div>
-            <div dir={e === "ar" ? "rtl" : "ltr"} data-s="5" style={{
+            <div dir="ltr" data-s="5" style={{
           background: "var(--card-bg, rgba(255, 255, 255, 0.02))",
           border: "1px solid var(--border)",
           borderRadius: "24px",

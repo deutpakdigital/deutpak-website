@@ -6,8 +6,7 @@ import { LanguageDropdown } from "@/components/LanguageDropdown";
 import { translations } from "@/i18n";
 import * as React from "react";
 import Link from "@/components/RouterLink";
-const d = "/assets/deutpak-logo_arb-CSITLNhQ.png",
-  Navbar = () => {
+const Navbar = () => {
     React.useEffect(() => {
       window.scrollTo(0, 0);
     }, []);
@@ -30,7 +29,7 @@ const d = "/assets/deutpak-logo_arb-CSITLNhQ.png",
               </div>
               <div className="logo">
                 <Link to="/" className="main-logo">
-                  <img src={i === "ar" ? d : i === "de" ? logoGer : logoEng} alt="Deutpak Logo" style={{
+                  <img src={i === "de" ? logoGer : logoEng} alt="Deutpak Logo" style={{
                   width: "280px",
                   height: "auto",
                   display: "block"
@@ -322,7 +321,7 @@ const d = "/assets/deutpak-logo_arb-CSITLNhQ.png",
                       </p>
                       <div className="footer-widget widget d-flex flex-column align-items-center">
                         <a className="logo mb-4" href="">
-                          <img src={s === "ar" ? d : s === "de" ? logoGer : logoEng} alt="Deutpak Logo" style={{
+                          <img src={s === "de" ? logoGer : logoEng} alt="Deutpak Logo" style={{
                           width: "160px",
                           height: "auto"
                         }} />

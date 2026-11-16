@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="de" dir="ltr" suppressHydrationWarning>
       <head>
-        {/* Swapped to bootstrap.rtl.min.css by LanguageProvider when Arabic is selected */}
         <link id="bootstrap-theme" rel="stylesheet" href="/css/bootstrap.min.css" />
         {/* Site styles must load after Bootstrap, as in the original build */}
         <link rel="stylesheet" href="/styles/main.css" />

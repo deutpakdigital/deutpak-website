@@ -136,7 +136,7 @@ function ContactQR() {
     C = t => {
       S(t);
     },
-    o = s === "ar";
+    o = false; // right-to-left layout flag; no RTL language is offered any more
   return <div dir={o ? "rtl" : "ltr"} style={{
     minHeight: "100vh",
     backgroundColor: "#05201a",
@@ -194,7 +194,7 @@ function ContactQR() {
         display: "flex",
         gap: "0.5rem"
       }}>
-          {["en", "de", "ar"].map(t => <button onClick={() => C(t)} style={{
+          {["de", "en"].map(t => <button onClick={() => C(t)} style={{
           background: s === t ? "rgba(212, 175, 55, 0.6)" : "transparent",
           color: "#ffffff",
           border: "1px solid rgba(255, 255, 255, 0.1)",

@@ -2,44 +2,37 @@
 
 import { createContext, useContext, useEffect, useState } from "react";
 
-// Same storage key the original i18next detector used, so saved choices carry over.
-const STORAGE_KEY = "i18nextLng";
-const SUPPORTED = ["de", "en", "ar"];
-const FALLBACK = "de";
+// Only a language the visitor picked in the switcher is remembered under this key.
+// (The old i18next key "i18nextLng" also cached the browser's language, so it is
+// ignored on purpose — otherwise English browsers would never see the German default.)
+const STORAGE_KEY = "deutpakLang";
+const SUPPORTED = ["de", "en"];
+const DEFAULT_LANGUAGE = "de";
 
 const LanguageContext = createContext(undefined);
 
 function detectLanguage() {
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored) {
-      const code = stored.slice(0, 2).toLowerCase();
-      if (SUPPORTED.includes(code)) return code;
-    }
+    if (SUPPORTED.includes(stored)) return stored;
   } catch {}
-  for (const lang of navigator.languages || [navigator.language]) {
-    const code = (lang || "").slice(0, 2).toLowerCase();
-    if (SUPPORTED.includes(code)) return code;
-  }
-  return FALLBACK;
+  return DEFAULT_LANGUAGE;
 }
 
 export function LanguageProvider({ children }) {
-  // Server render always uses the fallback; the real choice is applied after mount.
-  const [language, setLanguageState] = useState(FALLBACK);
+  // Server render always uses the default; a saved choice is applied after mount.
+  const [language, setLanguageState] = useState(DEFAULT_LANGUAGE);
 
   useEffect(() => {
     setLanguageState(detectLanguage());
   }, []);
 
   useEffect(() => {
-    document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
     document.documentElement.lang = language;
-    const link = document.getElementById("bootstrap-theme");
-    if (link) link.href = language === "ar" ? "/css/bootstrap.rtl.min.css" : "/css/bootstrap.min.css";
   }, [language]);
 
   const setLanguage = (code) => {
+    if (!SUPPORTED.includes(code)) return;
     try {
       localStorage.setItem(STORAGE_KEY, code);
     } catch {}

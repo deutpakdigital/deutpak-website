@@ -2,7 +2,6 @@
 
 export const logoEng = "/assets/deutpak-logo_eng-DxYAVKV4.png";
 export const logoGer = "/assets/deutpak-logo_ger-CiCcQ2cY.png";
-export const logoArb = "/assets/deutpak-logo_arb-CSITLNhQ.png";
 export const deutpakImg = "/assets/deutpak-BYY7rDEm.png";
 export const digitalImg = "/assets/digital-CblqdjMl.png";
 export const smartmeetBanner = "/assets/smartmeet-banner-Do-GrklD.png";

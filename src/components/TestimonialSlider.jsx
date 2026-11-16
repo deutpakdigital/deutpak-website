@@ -77,7 +77,7 @@ const k = [["path", {
               </div>
               <div className="carousel-container">
                 <div className="carousel-track" style={{
-              transform: `translateX(${s === "ar" ? i * 100 : -i * 100}%)`,
+              transform: `translateX(${-i * 100}%)`,
               transition: "transform 0.5s ease",
               display: "flex"
             }}>
