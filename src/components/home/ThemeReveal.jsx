@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { HeroSlides } from "@/components/home/HeroSlides";
-import { AboutPages } from "@/components/home/AboutPages";
+import { AboutPages, TeamPages } from "@/components/home/AboutPages";
 import { ServicesPage } from "@/components/home/ServicesPage";
 import { ProductsPage } from "@/components/home/ProductsPage";
 import { ContactPage } from "@/components/home/ContactPage";
@@ -74,6 +74,7 @@ const ThemeReveal = ({
                 <HeroSlides scrollToPage={() => {}} theme={c} toggleTheme={() => {}} />
                 <AboutPages currentPage={t} />
                 <ServicesPage currentPage={t} />
+                <TeamPages />
                 <ProductsPage />
                 <ContactPage scrollToPage={() => {}} />
               </div>

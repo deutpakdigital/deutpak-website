@@ -245,7 +245,17 @@ const AboutPages = ({
             </ul>
           </div>
         </div>
-        <div className="page content-page alt team-slide-page" data-page="8" style={{
+      </>;
+};
+
+// "Meet the team" pages. Rendered after ServicesPage, so they follow it in the scroll order.
+const TeamPages = () => {
+  const {
+      language: e
+    } = useLanguage(),
+    t = translations[e];
+  return <>
+        <div className="page content-page alt team-slide-page" data-page="9" style={{
       display: "flex",
       flexDirection: "column"
     }}>
@@ -264,7 +274,7 @@ const AboutPages = ({
             </div>
           </div>
         </div>
-        <div className="page content-page team-slide-page" data-page="9" style={{
+        <div className="page content-page team-slide-page" data-page="10" style={{
       display: "flex",
       flexDirection: "column"
     }}>
@@ -283,7 +293,7 @@ const AboutPages = ({
             </div>
           </div>
         </div>
-        <div className="page content-page alt team-slide-page" data-page="10" style={{
+        <div className="page content-page alt team-slide-page" data-page="11" style={{
       display: "flex",
       flexDirection: "column"
     }}>
@@ -310,4 +320,4 @@ const AboutPages = ({
       </>;
 };
 
-export { AboutPages };
+export { AboutPages, TeamPages };

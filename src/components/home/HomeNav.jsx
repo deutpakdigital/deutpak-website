@@ -51,7 +51,7 @@ const HomeNavBase = ({
                 <button className="nav-dropdown-item" onClick={() => t(7)}>
                   {translations[l].navCoreValues}
                 </button>
-                <button className="nav-dropdown-item" onClick={() => t(8)}>
+                <button className="nav-dropdown-item" onClick={() => t(9)}>
                   {translations[l].navMeetTeam}
                 </button>
               </div>
@@ -61,7 +61,7 @@ const HomeNavBase = ({
                 {translations[l].navSolutions} <span className="dd-arrow">▼</span>
               </span>
               <div className="nav-dropdown">
-                <button className="nav-dropdown-item" onClick={() => t(11)}>
+                <button className="nav-dropdown-item" onClick={() => t(8)}>
                   {translations[l].navServices}
                 </button>
                 <button className="nav-dropdown-item" onClick={() => t(12)}>
@@ -169,13 +169,13 @@ const HomeNavBase = ({
               <button className="mobile-menu-drawer-item" onClick={() => u(7)}>
                 {translations[l].navCoreValues}
               </button>
-              <button className="mobile-menu-drawer-item" onClick={() => u(8)}>
+              <button className="mobile-menu-drawer-item" onClick={() => u(9)}>
                 {translations[l].navMeetTeam}
               </button>
             </div>
             <div className="mobile-menu-group">
               <h3>{translations[l].navSolutions}</h3>
-              <button className="mobile-menu-drawer-item" onClick={() => u(11)}>
+              <button className="mobile-menu-drawer-item" onClick={() => u(8)}>
                 {translations[l].navServices}
               </button>
               <button className="mobile-menu-drawer-item" onClick={() => u(12)}>

@@ -109,7 +109,7 @@ const ServicesPage = ({
     [o, l] = React.useState(null),
     [u, c] = React.useState(null);
   return React.useEffect(() => {
-    if (r === 11) {
+    if (r === 8) {
       const d = setTimeout(() => a(!0), 600);
       return () => clearTimeout(d);
     } else a(!1), l(null);
@@ -118,7 +118,7 @@ const ServicesPage = ({
       const d = setTimeout(() => c(null), 300);
       return () => clearTimeout(d);
     }
-  }, [o]), <div className="page content-page" data-page="11">
+  }, [o]), <div className="page content-page" data-page="8">
           <div className="svc-header">
             <div className="slide-eyebrow" data-s="1">
               {t.svcLabel}
