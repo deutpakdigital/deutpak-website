@@ -255,7 +255,7 @@ const TeamPages = () => {
     } = useLanguage(),
     t = translations[e];
   return <>
-        <div className="page content-page alt team-slide-page" data-page="9" style={{
+        <div className="page content-page alt team-slide-page team-slide-first" data-page="9" style={{
       display: "flex",
       flexDirection: "column"
     }}>
@@ -279,9 +279,6 @@ const TeamPages = () => {
       flexDirection: "column"
     }}>
           <div className="team-slide-inner">
-            <div className="slide-eyebrow" data-s="1">
-              {t.abTeamLabel}
-            </div>
             <h1 className="team-slide-heading">{t.abDevTeamHeading}</h1>
             <div className="team-slide-cards-area">
               <ExpandingCards defaultActiveIndex={0} items={[{
@@ -293,14 +290,11 @@ const TeamPages = () => {
             </div>
           </div>
         </div>
-        <div className="page content-page alt team-slide-page" data-page="11" style={{
+        <div className="page content-page alt team-slide-page team-slide-last" data-page="11" style={{
       display: "flex",
       flexDirection: "column"
     }}>
           <div className="team-slide-inner">
-            <div className="slide-eyebrow" data-s="1">
-              {t.abTeamLabel}
-            </div>
             <h1 className="team-slide-heading">{t.abSupportTeamHeading}</h1>
             <div className="team-slide-cards-area">
               <ExpandingCards defaultActiveIndex={0} items={[{
